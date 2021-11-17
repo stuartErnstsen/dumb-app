@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-const port = process.env.port || process.env.SERVER_PORT;
+const port = process.env.PORT || process.env.SERVER_PORT;
 
 app.use(express.static("client"));
 
